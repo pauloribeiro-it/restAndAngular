@@ -1,0 +1,5 @@
+angular.module("listaTelefonica").config(function($httpProvider){
+	$httpProvider.interceptors.push("timestampInterceptor");
+	$httpProvider.interceptors.push("errorInterceptors");
+	$httpProvider.interceptors.push("loadingInterceptors");
+});
